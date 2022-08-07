@@ -1,0 +1,8 @@
+body{
+  font-size:small;
+}
+#result{
+  font-weight:bold;
+  padding:.5em;
+  font-size:initial;
+}

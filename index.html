@@ -1,0 +1,16 @@
+<title>Morrowind character generator</title>
+<meta charset='utf8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<link rel='stylesheet' href='style.css'>
+
+<div id='result'></div>
+<div><span id='count'></span> race-class combinations.</div>
+<div><span id='signcount'></span> combinations with signs.</div>
+
+<script type='module'>
+  import * as generator from './generator.js'
+  
+  document.querySelector('#result').textContent=generator.make()
+  document.querySelector('#count').textContent=generator.count()
+  document.querySelector('#signcount').textContent=generator.count(true)
+</script>
